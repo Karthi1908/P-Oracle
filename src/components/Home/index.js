@@ -35,7 +35,7 @@ export default function Home() {
               margin="10px"
             >
 				<Box display="flex" flexDirection="column" flexWrap="wrap">
-              <Text color={colors.text}> <b>ID </b>: {pred.value.pID}</Text>
+              <Text color={colors.text}> <b>ID </b>: {pred.id}</Text>
 			  <Text color='orange'>  {pred.value.predictionName} </Text>			  
 			  <Text color={colors.text}><b>Status </b>: {pred.value.predictionStatus}</Text>
 			  </Box>
