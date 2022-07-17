@@ -32,7 +32,7 @@ function App() {
       //   console.log(key);
       //   console.log(storage.predictTokenDetails.get(key));
       // }
-      for (let pred =10; pred < 20 ; pred++  ) {
+      for (let pred =27; pred < 28 ; pred++  ) {
 	  	 await predictions.get(pred).then(value => { predList.push({ id: pred, value }) })
 	      					.catch( console.log(pred , " not in the list"));
 		 
