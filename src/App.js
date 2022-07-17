@@ -23,7 +23,8 @@ function App() {
     ContractProvider.at(CONTRACT_ADDRESS).then(async (contract) => {
       const storage = await contract.storage();
       const predictions = storage.predictions;
-	  const counter = 11;
+	  const counter = storage.pCounter.toString();
+	    counter = counter + 10;
 	  const predList = [];
       // for (let key of storage.predictTokenDetails.keys()) {
       //   console.log(key);
