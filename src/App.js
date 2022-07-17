@@ -31,7 +31,8 @@ function App() {
       //   console.log(storage.predictTokenDetails.get(key));
       // }
       for (let pred =10; pred < counter; pred++  ) {
-	  	 await predictions.get(pred).then(value => { predList.push({ id: pred, value }) });
+	  	 await predictions.get(pred).then(value => { predList.push({ id: pred, value }) })
+	      					.error( console.log(pred , " not in the list"));
 		 
       
       }
