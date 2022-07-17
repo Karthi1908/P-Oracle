@@ -32,7 +32,7 @@ function App() {
       // }
       for (let pred =10; pred < counter1 ; pred++  ) {
 	  	 await predictions.get(pred).then(value => { predList.push({ id: pred, value }) })
-	      					.error( console.log(pred , " not in the list"));
+	      					.catch( console.log(pred , " not in the list"));
 		 
       
       }
