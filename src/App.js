@@ -24,7 +24,7 @@ function App() {
       const storage = await contract.storage();
       const predictions = storage.predictions;
 	  const counter = storage.pCounter.toString();
-	  const  counter1 = counter + 10;
+	  const  counter1 = parseInt(counter) + 10;
 	    
 	    console.log(counter , counter1);
 	  const predList = [];
