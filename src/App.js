@@ -24,13 +24,13 @@ function App() {
       const storage = await contract.storage();
       const predictions = storage.predictions;
 	  const counter = storage.pCounter.toString();
-	    counter = counter + 10;
+	  const  counter1 = counter + 10;
 	  const predList = [];
       // for (let key of storage.predictTokenDetails.keys()) {
       //   console.log(key);
       //   console.log(storage.predictTokenDetails.get(key));
       // }
-      for (let pred =10; pred < counter; pred++  ) {
+      for (let pred =10; pred < counter1 ; pred++  ) {
 	  	 await predictions.get(pred).then(value => { predList.push({ id: pred, value }) })
 	      					.error( console.log(pred , " not in the list"));
 		 
